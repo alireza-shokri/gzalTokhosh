@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    کد شما تایید شد
-</body>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فرش دست‌باف ایرانی</title>
+    <link rel="stylesheet" href="styles/style.css">
+ 
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#fff4e6] via-[#f9ded7] to-[#fef6f0] flex items-center justify-center p-6"
+  >
+    <div
+      class="relative group overflow-hidden bg-white rounded-3xl shadow-2xl p-8 max-w-3xl w-full flex flex-col md:flex-row items-center md:items-start gap-8 animate-fade-in-up"
+    >
+      <!-- QR Code -->
+      <div
+        class="w-56 h-56 shrink-0 transform transition-transform duration-500 group-hover:scale-105 rounded-xl border-4 border-amber-200 shadow-lg select-none "
+      >
+        <img
+          src="assets/images/logo_Qrcode.gif"
+          alt="QR Code فرش دست‌باف"
+          class="w-full h-full object-contain rounded-lg"
+        />
+      </div>
+
+      <!-- Text Section -->
+      <div class="text-right space-y-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-amber-700 tracking-wide">
+          فرش دست‌باف الوار
+        </h1>
+        <p class="text-[#065f46]">
+          فرش الوار شما تایید شد<br> اثری از شرکت تعاونی فرش
+          قزل توخوش<br> خریدار و صاحب اثر: اکبر خوشبخت الوار<br> استاد بافنده: نصرالله
+          انصاریان<br> نام اثر: اوش قیزلار<br> شمارنده: XII <br> مواد اولیه: پشم طبیعی فاقد
+          مواد شیمیایی <br> مدت زمان بافت: ۱۸۰ روز <br> تاریخ بافت: ۱۴۰۱/۰۲/۲۸ <br>امضا: <br> <img src="assets/images/Rouhani_signature.png" alt="">
+          "ایران در هر گره، جهان در هر نقش"
+        </p>
+    
+      </div>
+
+      <!-- Decorative Border -->
+      <div
+        class="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-tr from-amber-300 to-red-200 rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-700"
+      ></div>
+    </div>
+
+    <!-- Animation -->
+    <style>
+      @keyframes fade-in-up {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.8s ease-out forwards;
+      }
+    </style>
+  </body>
 </html>

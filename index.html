@@ -10,49 +10,53 @@
   </head>
   <body class="text-gray-800">
     <!-- Navigation -->
+   
     <nav class="nav-glass text-black shadow-md py-4 sticky top-0 z-50 w-full">
       <div class="container mx-auto flex justify-between items-center px-4">
+        <!-- Logo -->
         <div class="text-2xl font-bold flex items-center">
-          <i class="fas fa-rug ml-2 text-[#8b0000]"></i>
-          <span>قزل توخوش </span>
+          <i class="fas fa-rug ml-2 text-[#8b0000] rotate-90"></i>
+       
+          <span>قزل توخوش</span>
         </div>
-        <ul class="gap-8 text-lg hidden md:flex">
-          <li>
-            <a href="#" class="item">
-              <i class="fa fa-home"></i>
-              خانه</a
-            >
-          </li>
-
-          <li>
-            <a href="#categories" class="item"
-              ><i class="fa-solid fa-rug"></i>فرش ها</a
-            >
-          </li>
-          <li>
-            <a href="#about" class="item">
-              <i class="fas fa-user"></i>
-              اکانت من
-            </a>
-          </li>
-          <li>
-            <a href="#contact" class="item"
-              ><i class="fas fa-phone-alt"></i> تماس با ما</a
-            >
-          </li>
-        </ul>
-        <button class="md:hidden text-2xl">
+    
+        <!-- Menu Icon -->
+        <button
+          class="menu_icon md:hidden text-2xl focus:outline-none cursor-pointer pt-2"
+          aria-label="Toggle Menu"
+        >
           <i class="fas fa-bars"></i>
         </button>
+    
+        <!-- Menu List -->
+        <ul
+          id="menu_list"
+          class="hidden md:flex absolute w-40  left-0 top-16 space-y-8 bg-white p-4 rounded-2xl flex-col md:flex-row md:gap-6 gap-4 text-center md:text-right transition-all duration-300 md:top-0 md:static md:p-0 md:space-y-0 md:bg-transparent md:w-fit"
+        >
+          <li><a href="#" class="item"><i class="fa fa-home"></i> خانه</a></li>
+          <li><a href="#categories" class="item"><i class="fa-solid fa-rug"></i> فرش‌ها</a></li>
+          <li><a href="#about" class="item"><i class="fas fa-user"></i> اکانت من</a></li>
+          <li><a href="#contact" class="item"><i class="fas fa-phone-alt"></i> تماس با ما</a></li>
+        </ul>
+
+
+
       </div>
     </nav>
+    
+
+    <!-- landing page  -->
+     
+    <div class="backdrop-blur-[5px] z-50 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-47%]  select-none fixed w-screen md:w-fit " id="landing_page">
+     <img src="assets/images/logo.gif" alt="">
+    </div>
 
     <!-- Header -->
     <header
       class="bg-gradient-to-r from-[#8b0000] to-[#a52a2a] text-amber-100 py-12 shadow-lg text-center w-[80%] md:w-[50%] mx-auto rounded-xl mt-8 header-glow"
     >
       <h1 class="text-3xl md:text-4xl font-extrabold mb-4">
-        فروشگاه فرش سنتی ایران
+        فرش دستباف الوار
       </h1>
       <p class="text-lg md:text-xl">زیبایی و اصالت در هر تار و پود</p>
       <div class="mt-6">
@@ -77,14 +81,18 @@
             class="absolute bottom-0 right-0 w-full h-2 bg-amber-200 z-0"
           ></span>
         </h2>
+
+
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
           <!-- Card Component -->
           <div
             class="card-pattern rounded-xl shadow-lg overflow-hidden transition-all duration-300 category-card"
           >
             <div class="relative overflow-hidden h-60">
               <img
-                src="assets/images/photo_5769325472050694891_y.jpg"
+                src="assets/images/photo_5865955596191253874_y.jpg"
                 alt="فرش دستباف"
                 class="w-full h-full object-cover transition duration-500 hover:scale-110"
               />
@@ -93,7 +101,7 @@
               ></div>
             </div>
             <div class="p-5">
-              <h3 class="text-xl font-semibold mb-2">فرش دستباف</h3>
+              <h3 class="text-xl font-semibold mb-2"> فرش دستبافت 12 متری</h3>
               <p class="text-gray-600 text-sm">
                 ساخته شده با هنر دست استادکاران ایرانی
               </p>
@@ -111,7 +119,7 @@
           >
             <div class="relative overflow-hidden h-60">
               <img
-                src="assets/images/photo_5839305478738396577_y.jpg"
+                src="assets/images/photo_5893516405624652640_y.jpg"
                 alt="فرش ماشینی"
                 class="w-full h-full object-cover transition duration-500 hover:scale-110"
               />
@@ -120,7 +128,7 @@
               ></div>
             </div>
             <div class="p-5">
-              <h3 class="text-xl font-semibold mb-2">فرش ماشینی</h3>
+              <h3 class="text-xl font-semibold mb-2">فرش دستبافت 6 متری</h3>
               <p class="text-gray-600 text-sm">کیفیت بالا با قیمت مناسب</p>
               <a
                 href="#"
@@ -136,7 +144,7 @@
           >
             <div class="relative overflow-hidden h-60">
               <img
-                src="assets/images/photo_5965535138798486866_y.jpg"
+                src="assets/images/photo_5906862140323644505_y.jpg"
                 alt="تابلوفرش"
                 class="w-full h-full object-cover transition duration-500 hover:scale-110"
               />
@@ -145,7 +153,7 @@
               ></div>
             </div>
             <div class="p-5">
-              <h3 class="text-xl font-semibold mb-2">تابلوفرش</h3>
+              <h3 class="text-xl font-semibold mb-2">فرش تاجری</h3>
               <p class="text-gray-600 text-sm">اثر هنری برای دیوارهای شما</p>
               <a
                 href="#"
@@ -161,7 +169,7 @@
           >
             <div class="relative overflow-hidden h-60">
               <img
-                src="assets/images/farcsh.jpg"
+                src="assets/images/photo_5922349607709427126_y.jpg"
                 alt="گلیم و قالیچه"
                 class="w-full h-full object-cover transition duration-500 hover:scale-110"
               />
@@ -182,6 +190,20 @@
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <!-- About Us -->
       <section id="about" class="mb-20">
@@ -240,7 +262,7 @@
           <div>
             <h3 class="text-xl font-bold mb-4 flex items-center">
               <i class="fas fa-rug ml-2"></i>
-              فرش ایران
+              فرش الوار
             </h3>
             <p class="text-amber-100">
              فرش دست باف الور و حومه
@@ -284,11 +306,11 @@
             <ul class="space-y-2">
               <li class="flex items-center">
                 <i class="fas fa-map-marker-alt ml-2 text-amber-200"></i>
-                تهران، خیابان ولیعصر، پلاک ۱۲۳۴
+               روستای الوار
               </li>
               <li class="flex items-center">
                 <i class="fas fa-phone ml-2 text-amber-200"></i>
-                ۰۲۱-۱۲۳۴۵۶۷۸
+              091400000
               </li>
               <li class="flex items-center">
                 <i class="fas fa-envelope ml-2 text-amber-200"></i>
@@ -357,8 +379,7 @@
     <a href="#" id="floating_btn" class="floating-btn animate-bounce hide">
       <i class="fas fa-arrow-up"></i>
     </a>
-    
-    <p class="dark:bg-green-900 ">alireza</p>
+  
     <script src="app.js"></script>
   </body>
 </html>
